@@ -9,6 +9,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./dozzle-data:/data
+      - ./users.yml:/app/users.yml:ro
     labels:
       - 'traefik.enable=true'
       - 'traefik.http.routers.dozzle.rule=Host(`dozzle.coding.global`)'
