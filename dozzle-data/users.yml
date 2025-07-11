@@ -7,5 +7,4 @@ users:
     email: tokyo@tokyo.tokyo
     name: Admin User
     password: afe04579004049ccce1843a40bdf9eb85f3a4839390375e35d0018a7f9aa70c8
-    filters:
-      - name=coding-global-bot
+    filter: name=coding-global-bot
