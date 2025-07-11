@@ -6,4 +6,4 @@ users:
   tokyo:
     name: Guest
     password: $2a$11$GVeDImXgzqB/2pfLEyayQumd.y7qArb1UIYykUsKaYdkjDjLNVyfG
-    filter: "name=coding-global-bot"
+    filter: "label=dozzle.access=tokyo"
