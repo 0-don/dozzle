@@ -1,9 +1,9 @@
 users:
   dozzle:
     name: Admin
-    password: 0f486af332dc3d29289f6a62ad4548639b48fe9b03b19387bebff8dd6a1fd50e
+    password: $2a$11$ujwsPgGpULEXmAB5GOCuIeDfp/Eijg9.RTKrou6daYymk9Nla9qzy
     filter:
   tokyo:
     name: Guest
-    password: afe04579004049ccce1843a40bdf9eb85f3a4839390375e35d0018a7f9aa70c8
+    password: $2a$11$GVeDImXgzqB/2pfLEyayQumd.y7qArb1UIYykUsKaYdkjDjLNVyfG
     filter: "name=coding-global-bot"

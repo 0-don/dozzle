@@ -10,13 +10,14 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock:ro
       - ./dozzle-data:/data
     labels:
-      - 'traefik.enable=true'
-      - 'traefik.http.routers.dozzle.rule=Host(`dozzle.coding.global`)'
-      - 'traefik.http.routers.dozzle.entrypoints=websecure'
-      - 'traefik.http.routers.dozzle.tls.certresolver=letsencrypt'
-      - 'traefik.http.services.dozzle.loadbalancer.server.port=8080'
+      - "traefik.enable=true"
+      - "traefik.http.routers.dozzle.rule=Host(`dozzle.coding.global`)"
+      - "traefik.http.routers.dozzle.entrypoints=websecure"
+      - "traefik.http.routers.dozzle.tls.certresolver=letsencrypt"
+      - "traefik.http.services.dozzle.loadbalancer.server.port=8080"
 
 networks:
   proxy:
     external: false
     name: proxy
+# docker run -it --rm amir20/dozzle generate dozzle --password yourpassword1
